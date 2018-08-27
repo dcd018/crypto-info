@@ -1,0 +1,66 @@
+{
+  "name": "crypt-info",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=6.9.1",
+    "npm": ">=3.10.0"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && mkdir -p dist && babel src -s -D -d dist",
+    "test": "jest",
+    "lint": "esw -w src test"
+  },
+  "dependencies": {
+    "api": "^1.0.0",
+    "bluebird": "^3.5.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.11",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
+    "babel-register": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.16.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-watch": "^3.0.0",
+    "jest": "^19.0.2",
+    "rimraf": "^2.6.1"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "import",
+      "jest"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "jest/no-focused-tests": 2,
+      "jest/no-identical-title": 2,
+      "semi": 2,
+      "no-console": 0
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}
