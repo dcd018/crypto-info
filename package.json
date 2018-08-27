@@ -14,23 +14,22 @@
     "lint": "esw -w src test"
   },
   "dependencies": {
-    "api": "^1.0.0",
-    "bluebird": "^3.5.0",
+    "bluebird": "^3.5.1",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-env": "^1.1.11",
-    "babel-jest": "^19.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.4.2",
     "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
-    "babel-register": "^6.24.1",
-    "dotenv": "^4.0.0",
-    "eslint": "^3.16.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^19.0.1",
-    "eslint-watch": "^3.0.0",
-    "jest": "^19.0.2",
-    "rimraf": "^2.6.1"
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.4.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-watch": "^4.0.2",
+    "jest": "^23.5.0",
+    "rimraf": "^2.6.2"
   },
   "eslintConfig": {
     "plugins": [
