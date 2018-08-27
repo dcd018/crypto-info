@@ -1,3 +1,0 @@
-Usage:  docker run crypto-info PROVIDER1 PROVIDER2
-
-Displays information about Cryptocurrency Providers
